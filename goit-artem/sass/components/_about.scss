@@ -1,0 +1,39 @@
+.about {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    padding: 27px 82px 27px 83px;
+    bottom: 0;
+    position: absolute;
+  }
+  &__list:not(:last-child) {
+    margin-right: 30px;
+  }
+}

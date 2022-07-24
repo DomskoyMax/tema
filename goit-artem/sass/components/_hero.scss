@@ -1,0 +1,105 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg-mob-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin: 0 auto;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-mob-2x-min.jpg);
+  }
+  @include tablet {
+    max-width: 1200px;
+
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-tab-min.jpg);
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg-tab-2x-min.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg.jpg);
+    min-width: 100%;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg-web-2x-min.jpg);
+    }
+  }
+}
+
+.hero-main {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 360px;
+  margin: 0 auto;
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+.header-btn {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  min-width: 200px;
+  height: 50px;
+  border: none;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-btn:hover {
+  transform: scale(1.1);
+}

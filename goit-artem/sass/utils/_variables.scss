@@ -1,0 +1,93 @@
+:root {
+  --header-color: #212121;
+  --text-color: #757575;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+}
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+address {
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  position: relative;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    max-width: 720px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}

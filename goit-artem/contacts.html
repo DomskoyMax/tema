@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a class="header-logo link" href="./index.html"
+            >Web<span class="decoratoin-header">Studio</span>
+          </a>
+
+          <ul class="list header-menu">
+            <li class="header-item">
+              <a class="link header-link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="link header-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="link header-link active" href="./contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-connect">
+          <ul class="list header-tel-mail">
+            <li class="header-soc-link">
+              <a class="header-mail link" href="mailto:info@devstudio.com">
+                <svg class="header-soc-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-soc-link">
+              <a class="header-tel link" href="tel:+380961111111"
+                ><svg class="header-soc-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+    <footer class="footer">
+      <div class="container-join container">
+        <div>
+          <div class="footer-logo-div">
+            <a class="footer-logo link" href="./index.html"
+              >Web<span class="decoratoin-footer">Studio</span>
+            </a>
+          </div>
+          <address>
+            <ul class="list footer-link-list">
+              <li class="footer-link">
+                <a
+                  class="link footer-adress"
+                  href="https://goo.gl/maps/Rno5h5Bbrpb7dX558"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-link">
+                <a class="link footer-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-link">
+                <a class="link footer-tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <h2 class="join-title">Присоединяйтесь</h2>
+          <ul class="join-soc-list list">
+            <li class="join-soc-item">
+              <a href="" class="join-soc-link link">
+                <svg class="join-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-soc-item">
+              <a href="" class="join-soc-link link"
+                ><svg class="join-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="join-soc-item">
+              <a href="" class="join-soc-link link"
+                ><svg class="join-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="join-soc-item">
+              <a href="" class="join-soc-link link"
+                ><svg class="join-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-soc-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
